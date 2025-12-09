@@ -351,10 +351,15 @@ export default function App() {
                         bottom: 44,
                         left: 44,
                       }}
+                      style={{
+                        width: 36,
+                        alignItems: 'center',
+                      }}
                     >
-                      <Text type="link" bold>
+                      {/* <Text type="link" bold>
                         Done
-                      </Text>
+                      </Text> */}
+                      <SymbolView name="checkmark" tintColor={colors.text} />
                     </TouchableOpacity>
                   ),
                   presentation: 'modal',

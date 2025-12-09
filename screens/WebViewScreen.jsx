@@ -83,6 +83,10 @@ export default function WebViewScreen() {
             bottom: 44,
             left: 44,
           }}
+          style={{
+            width: 36,
+            alignItems: 'center',
+          }}
         >
           <SymbolView name="ellipsis" tintColor={colors.text} />
         </TouchableOpacity>
@@ -128,7 +132,7 @@ export default function WebViewScreen() {
   return (
     <WebView
       ref={webViewRef}
-      style={{ backgroundColor: colors.background }}
+      // style={{ backgroundColor: colors.background }}
       applicationNameForUserAgent={`${Application.applicationName}/${Application.nativeApplicationVersion}`}
       source={{ uri: url }}
       originWhitelist={['http://*', 'https://*', 'data:*', 'about:*']}
